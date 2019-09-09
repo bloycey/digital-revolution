@@ -5,35 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/5b16fd7891.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Digital Revolution</title>
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="container d-none d-lg-block navbar-top">
 			<div class="row align-items-center">
-				<div class="col-8">
+				<div class="col-7">
 					<nav class="nav">
-						<a class="nav-link text-body pl-0 pr-4" href="#">Our Blog</a>
-						<a class="nav-link text-body pl-0 pr-4" href="#">About Us</a>
-						<a class="nav-link text-body pl-0 pr-4" href="#">Buying Guides</a>
-						<a class="nav-link text-body pl-0 pr-4" href="#">Contact Us</a>
+						<a class="nav-link text-secondary pl-0 pr-4 small" href="#">Our Blog</a>
+						<a class="nav-link text-secondary pl-0 pr-4 small" href="#">About Us</a>
+						<a class="nav-link text-secondary pl-0 pr-4 small" href="#">Buying Guides</a>
+						<a class="nav-link text-secondary pl-0 pr-4 small" href="#">Contact Us</a>
 					</nav>
 				</div>
-				<div class="col">
-					search bar
+				<div class="col d-flex align-items-center">
+					<i class="fas fa-search mr-1 text-secondary ml-auto"></i><input type="text" placeholder="Search our store..." class="border-0 pl-2 text-secondary small"/>
 				</div>
-				<div class="col">
-					phone number
+				<div class="col d-flex align-items-center">
+					<i class="fas fa-phone mr-2 text-secondary ml-auto"></i><a href="tel:1300 456 789" class="text-secondary small">1800 456 789</a>
 				</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark shadow-sm">
 			<div class="container">
-				<a class="navbar-brand mr-5" href="#"><img src="/img/logo.png" alt="Digital Revolution Logo"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler border-0 p-0 text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars text-white"></i>
 				</button>
+				<a class="navbar-brand mr-auto mr-lg-5 ml-3 ml-lg-0" href="#"><img src="/img/logo.png" alt="Digital Revolution Logo"></a>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
@@ -54,6 +55,12 @@
 						<li class="nav-item">
 							<a class="nav-link pl-3 pr-3" href="#">Gaming</a>
 						</li>
+					</ul>
+				</div>
+				<div class="menu-icon-wrapper ml-auto">
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item"><i class="fas fa-search text-white ml-2"></i></li>
+						<li class="list-inline-item"><i class="fas fa-shopping-cart text-white ml-2"></i></li>
 					</ul>
 				</div>
 			</div>
