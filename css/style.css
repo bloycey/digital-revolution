@@ -34,3 +34,7 @@
 	color: rgba(255,255,255,.75);
 }
 
+.mobile-menu .nav-item {
+	width: 50%;
+}
+
