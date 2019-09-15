@@ -4,6 +4,13 @@
 	font-size: 90%;
 }
 
+@media only screen and (min-width: 992px) {
+	.py-lg-6 {
+		padding-top: 90px !important;
+		padding-bottom: 90px !important;
+	}
+}
+
 /***** HEADER *******/
 
 .navbar-main i {
@@ -22,6 +29,16 @@
 		top: unset;
 		right: unset;
 	}
+
+	#navbarNav .nav-item a {
+		padding-bottom: 6px;
+		margin-bottom: -6px;
+		border-bottom: 1px solid transparent;
+	}
+
+	#navbarNav .nav-item a:hover {
+		border-bottom: 1px solid #00CBB8;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -37,4 +54,29 @@
 .mobile-menu .nav-item {
 	width: 50%;
 }
+
+/***HERO PANEL***/
+
+#hero {
+	background-color: #00BDAB;
+}
+
+#hero h1 {
+	font-size: 28px;
+}
+
+#hero .lead {
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+	#hero h1 {
+		font-size: 45px;
+	}
+
+	#hero .lead {
+		font-size: 1.25rem;
+	}
+}
+
 
