@@ -4,6 +4,10 @@
 	font-size: 90%;
 }
 
+.text-light {
+	color: rgba(255,255,255,.75) !important;
+}
+
 @media only screen and (min-width: 992px) {
 	.py-lg-6 {
 		padding-top: 90px !important;
@@ -45,10 +49,6 @@
 	.navbar-main > .container {
 		max-width: 100%;
 	}
-}
-
-.navbar-dark .navbar-nav .nav-link {
-	color: rgba(255,255,255,.75);
 }
 
 .mobile-menu .nav-item {
