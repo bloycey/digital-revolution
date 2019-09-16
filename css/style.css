@@ -51,7 +51,7 @@
 	}
 }
 
-.mobile-menu .nav-item {
+.mobile-menu .nav-item, .desktop-categories .nav-item {
 	width: 50%;
 }
 
