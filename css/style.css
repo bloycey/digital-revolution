@@ -91,4 +91,22 @@
 	}
 }
 
+/***** THUMBNAILS *******/
 
+.thumb-img-wrapper {
+	height: 255px;
+}
+
+.thumb-img-wrapper img {
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.thumbnail .card-title {
+	height: 80px;
+}
+
+.was-price {
+	text-decoration: line-through;
+}
