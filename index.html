@@ -178,13 +178,17 @@
 				</div>
 				<div class="menu-icon-wrapper ml-auto">
 					<ul class="list-inline mb-0">
-						<li class="list-inline-item d-lg-none"><i class="fas fa-search text-white ml-2"></i></li>
+						<li class="list-inline-item d-lg-none" data-toggle="collapse" data-target="#searchDropdown"><i class="fas fa-search text-white ml-2"></i></li>
 						<li class="list-inline-item"><i class="fas fa-shopping-cart text-white ml-2 mr-2"></i> <span class="d-none d-lg-inline-block text-light">Shopping Cart</span><i class="fas fa-angle-down text-white ml-2"></i></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+	<div id="searchDropdown" class="position-relative collapse d-lg-none">
+		<i class="fas fa-search ml-2 position-absolute text-muted"></i>
+		<input type="text" class="w-100 border-0" placeholder="What are you searching for?">
+	</div>
 	<section id="hero" class="container-fluid">
 		<div class="row">
 			<div class="container py-4 py-lg-6">

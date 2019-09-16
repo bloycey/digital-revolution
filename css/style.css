@@ -18,7 +18,7 @@
 /***** HEADER *******/
 
 .navbar-main i {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .menu-icon-wrapper {
@@ -53,6 +53,18 @@
 
 .mobile-menu .nav-item {
 	width: 50%;
+}
+
+/****SEARCH DROPDOWN ***/
+
+#searchDropdown input {
+	height: 55px;
+	padding-left: 55px;
+}
+
+#searchDropdown i {
+	left: 15px;
+	top: 20px;
 }
 
 /***HERO PANEL***/
