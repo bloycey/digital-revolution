@@ -15,6 +15,16 @@
 	}
 }
 
+.h5, h5 {
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+	.h5, h5 {
+		font-size: 1.15rem;
+	}
+}
+
 /***** HEADER *******/
 
 .navbar-main i {
@@ -93,6 +103,17 @@
 
 /***** THUMBNAILS *******/
 
+.thumbnail {
+	min-width: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+	.thumbnail {
+		min-width: 25%;
+	}
+}
+
+
 .thumb-img-wrapper {
 	height: 255px;
 }
@@ -107,6 +128,16 @@
 	height: 80px;
 }
 
+@media only screen and (max-width: 340px) {
+	.thumbnail .card-title {
+		height: auto;
+	}
+}
+
 .was-price {
 	text-decoration: line-through;
+}
+
+.thumbnail .badges {
+	right: 0;
 }
