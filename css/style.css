@@ -4,8 +4,17 @@
 	font-size: 90%;
 }
 
+.big-lead {
+	font-size: 1.75rem;
+	font-weight: 300;
+}
+
 .text-light {
 	color: rgba(255,255,255,.75) !important;
+}
+
+.text-secondary {
+	color: #5c636a!important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -67,7 +76,7 @@
 
 /****SEARCH DROPDOWN ***/
 
-#searchDropdown input {
+#searchDropdown input, #newsletter input {
 	height: 55px;
 	padding-left: 55px;
 }
@@ -79,7 +88,7 @@
 
 /***HERO PANEL***/
 
-#hero {
+#hero, #newsletter {
 	background-color: #00BDAB;
 }
 
@@ -140,4 +149,27 @@
 
 .thumbnail .badges {
 	right: 0;
+}
+
+/*******HOME TESTIMONIALS******/
+
+#homeTestimonials {
+	background-image: url("/img/testimonial-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.testimonial-slide span {
+	font-size: 150%;
+	transform: translate(-160%, -40%);
+	position: absolute;
+}
+
+.testimonials-wrapper .slick-dots li button:before {
+	color: #ffffff;
+	font-size: 12px;
+}
+
+.testimonials-wrapper .slick-dots {
+	position: static;
 }

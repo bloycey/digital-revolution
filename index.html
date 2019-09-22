@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/5b16fd7891.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Digital Revolution</title>
 </head>
@@ -38,30 +39,50 @@
 				<a class="navbar-brand mr-auto mr-lg-5 ml-3 ml-lg-0" href="#"><img src="img/logo.png" alt="Digital Revolution Logo"></a>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<hr class="border-light m-0 mt-2 d-lg-none">
-					<h5 class="text-white mb-1 mt-3 d-lg-none">Quick Links</h5>
-					<ul class="navbar-nav mr-auto pt-2 pt-lg-0">
-						<li class="nav-item">
-							<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Smart Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Routers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Drones</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Security</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Tablets</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Gaming</a>
-						</li>
-					</ul>
-					<hr class="border-light m-0 mt-2 d-lg-none">
-					<h5 class="text-white mb-1 mt-3 d-lg-none">All Categories</h5>
-					<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-lg-none d-flex flex-row flex-wrap mobile-menu">
+					<h5 class="text-white mb-1 mt-3 d-lg-none" data-toggle="collapse" data-target="#quickLinksWrapper">Quick Links</h5>
+					<div class="row collapse" id="quickLinksWrapper">
+						<div class="col">
+							<ul class="navbar-nav mr-auto pt-lg-0">
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Smart Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Routers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Drones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Security</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Tablets</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Gaming</a>
+								</li>
+							</ul>	
+						</div>
+						<div class="col">
+							<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-lg-none">
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Our Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">About Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Buying Guides</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- <hr class="border-light m-0 mt-2 d-lg-none"> -->
+					<h5 class="text-white mb-1 mt-3 d-lg-none" data-toggle="collapse" data-target="#mobileMenuCategories">All Categories</h5>
+					<ul class="navbar-nav mr-auto pt-lg-0 d-lg-none flex-row flex-wrap mobile-menu collapse" id="mobileMenuCategories">
 						<li class="nav-item">
 							<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Drones</a>
 						</li>
@@ -159,22 +180,6 @@
 							<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Conduits</a>
 						</li>
 					</ul>
-					<hr class="border-light m-0 mt-2 d-lg-none">
-					<h5 class="text-white mb-1 mt-3 d-lg-none">Useful Links</h5>
-					<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-lg-none">
-						<li class="nav-item">
-							<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Our Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Buying Guides</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Contact Us</a>
-						</li>
-					</ul>
 				</div>
 				<div class="menu-icon-wrapper ml-auto">
 					<ul class="list-inline mb-0">
@@ -193,7 +198,7 @@
 		<div class="row">
 			<div class="container py-5 py-lg-6">
 				<h1 class="text-white mb-2">The future of tech is right here.</h1>
-				<div class="subtitle lead text-white">Digital Revolution provides innovative tech solutions and products for forward-thinking businesses and individuals. Build a smart home. Future-proof your company. Make the most of your technology with Digital Revolution.</div>
+				<div class="lead text-white">Digital Revolution provides innovative tech solutions and products for forward-thinking businesses and individuals. Build a smart home. Future-proof your company. Make the most of your technology with Digital Revolution.</div>
 			</div>
 		</div>
 	</section>
@@ -202,7 +207,7 @@
 			<div class="col">
 				<h4 class="border-bottom pb-3 text-secondary">Top Products</h3>
 				<div class="row">
-					<!--thumbnail mt-3-->
+					<!--thumbnail-->
 					<div class="col thumbnail mt-3 position-relative">
 						<div class="card w-100 border-0">
 							<div class="badges position-absolute text-right">
@@ -229,7 +234,7 @@
 							</div>
 						</div>
 					</div>
-					<!--End thumbnail mt-3-->
+					<!--End thumbnail-->
 					<div class="col thumbnail mt-3">
 						<div class="card w-100 border-0">
 							<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
@@ -251,100 +256,100 @@
 					<div class="card-body">
 						<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-flex flex-row flex-wrap desktop-categories">
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Drones</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Drones</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Cameras & Photos</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Cameras & Photos</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Home Cinema & Audio</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Home Cinema & Audio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Speakers</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Speakers</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Headphones</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Headphones</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Televisions</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Televisions</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Mobile Phones</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Mobile Phones</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Phone Accessories</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Phone Accessories</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Smart Home</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Smart Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Wearable Technology</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Wearable Technology</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Musical Instruments</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Musical Instruments</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">GPS Navigation</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">GPS Navigation</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Laptops</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Laptops</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Desktops</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Desktops</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Computer Accessories</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Computer Accessories</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Networking</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Networking</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Office Furniture</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Office Furniture</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Radio Communication</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Radio Communication</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Batteries</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Batteries</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Vehicle Electronics</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Vehicle Electronics</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">VOIP Accessories</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">VOIP Accessories</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Cord Management</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Cord Management</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Surge Protectors</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Surge Protectors</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Extension Cords</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Extension Cords</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Cables</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Cables</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Switches & Dimmers</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Switches & Dimmers</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Home Automation</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Home Automation</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Electric Motors</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Electric Motors</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Door Chimes</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Door Chimes</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Tools</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Tools</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Hobby Kits</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Hobby Kits</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-body pt-0 pb-lg-1 pr-lg-3" href="#">Conduits</a>
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Conduits</a>
 							</li>
 						</ul>
 					</div>
@@ -389,7 +394,6 @@
 					</div>
 				</div>
 			</div>
-			<!--thumbnail mt-3-->
 			<div class="col thumbnail mt-3 position-relative">
 				<div class="card w-100 border-0">
 					<div class="badges position-absolute text-right">
@@ -416,7 +420,6 @@
 					</div>
 				</div>
 			</div>
-			<!--End thumbnail mt-3-->
 			<div class="col thumbnail mt-3">
 				<div class="card w-100 border-0">
 					<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
@@ -430,9 +433,237 @@
 			</div>
 		</div>
 	</section>
+	<section id="homeTestimonials" class="py-4">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="testimonials-wrapper col-lg-8">
+					<div class="testimonial-slide text-white pt-3 pb-0 pt-lg-5 pb-lg-4">
+						<h2 class="font-italic pb-2">My favourite online technology store!</h2>
+						<p class="lead">I've been shopping at Digital Revolution for the past 10 years and am continually impressed with their range and service. 5 stars! - John, Brisbane.</p>
+					</div>
+					<div class="testimonial-slide text-white pt-3 pb-0 pt-lg-5 pb-lg-4">
+						<h2 class="font-italic pb-2">I love this place!</h2>
+						<p class="lead">I've been shopping at Digital Revolution for the past 10 years and am continually impressed with their range and service. 5 stars! - John, Brisbane.</p>
+					</div>
+					<div class="testimonial-slide text-white pt-3 pb-0 pt-lg-5 pb-lg-4">
+						<h2 class="font-italic pb-2">Thrilled with my new PC.</h2>
+						<p class="lead">I've been shopping at Digital Revolution for the past 10 years and am continually impressed with their range and service. 5 stars! - John, Brisbane.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="homeBottom" class="container py-4 py-lg-5">
+		<div class="row">
+			<div class="col">
+				<h4 class="border-bottom pb-3 text-secondary">Sale Products</h3>
+				<div class="row">
+					<div class="col thumbnail mt-3 position-relative">
+						<div class="card w-100 border-0">
+							<div class="badges position-absolute text-right">
+								<span class="badge badge-pill badge-success px-2 py-1">On Sale</span>
+								<span class="badge badge-pill badge-primary px-2 py-1">RRP $1299</span>
+								<span class="badge badge-pill badge-warning px-2 py-1">15% OFF</span>
+							</div>
+							<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
+								<img src="img/drone.jpg" class="card-img-top align-self-center justify-self-center" alt="drone image">
+							</div>
+								<div class="card-body px-0">
+								<h5 class="card-title mb-0">DJ Mavic Portable Drone, Arctic White</h5>
+								<p class="card-text lead pr-2">Now $1099 <span class="was-price text-danger">$1299</span></p>
+								<div class="rating-wrapper">
+									<small>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<span class="text-muted pl-2">Avg 5/5 <span class="d-none d-md-inline-block">(12 ratings)</span></span>
+									</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col thumbnail mt-3">
+						<div class="card w-100 border-0">
+							<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
+								<img src="img/headphones.jpg" class="card-img-top align-self-center justify-self-center" alt="drone image">
+							</div>
+								<div class="card-body px-0">
+								<h5 class="card-title mb-0">Bose QuietComfort 35 (Series II) Wireless Bluetooth Headphones</h5>
+								<p class="card-text lead pr-2">$369</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 d-none d-lg-inline-block">
+				<div class="card">
+					<div class="card-header bg-dark text-white">
+						<h5 class="mb-0">Our Brands</h4>
+					</div>
+					<div class="card-body">
+						<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-flex flex-row flex-wrap desktop-categories">
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Apple</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Samsung</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Huawei</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">AMD</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Nvidia</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">ASUS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Gigabyte</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Logitech</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Razer</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">LG</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Google</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">BenQ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Thermaltake</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Corsair</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Seagate</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Bose</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Mavik</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary pt-0 pb-lg-1 pr-lg-3" href="#">Sony</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row pt-md-2">
+			<div class="col thumbnail mt-3 position-relative">
+				<div class="card w-100 border-0">
+					<div class="badges position-absolute text-right">
+						<span class="badge badge-pill badge-success px-2 py-1">On Sale</span>
+						<span class="badge badge-pill badge-primary px-2 py-1">RRP $1299</span>
+						<span class="badge badge-pill badge-warning px-2 py-1">15% OFF</span>
+					</div>
+					<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
+						<img src="img/drone.jpg" class="card-img-top align-self-center justify-self-center" alt="drone image">
+					</div>
+						<div class="card-body px-0">
+						<h5 class="card-title mb-0">DJ Mavic Portable Drone, Arctic White</h5>
+						<p class="card-text lead pr-2">Now $1099 <span class="was-price text-danger">$1299</span></p>
+						<div class="rating-wrapper">
+							<small>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<span class="text-muted pl-2">Avg 5/5 <span class="d-none d-md-inline-block">(12 ratings)</span></span>
+							</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col thumbnail mt-3">
+				<div class="card w-100 border-0">
+					<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
+						<img src="img/headphones.jpg" class="card-img-top align-self-center justify-self-center" alt="drone image">
+					</div>
+						<div class="card-body px-0">
+						<h5 class="card-title mb-0">Bose QuietComfort 35 (Series II) Wireless Bluetooth Headphones</h5>
+						<p class="card-text lead pr-2">$369</p>
+					</div>
+				</div>
+			</div>
+			<div class="col thumbnail mt-3 position-relative">
+				<div class="card w-100 border-0">
+					<div class="badges position-absolute text-right">
+						<span class="badge badge-pill badge-success px-2 py-1">On Sale</span>
+						<span class="badge badge-pill badge-primary px-2 py-1">RRP $1299</span>
+						<span class="badge badge-pill badge-warning px-2 py-1">15% OFF</span>
+					</div>
+					<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
+						<img src="img/drone.jpg" class="card-img-top align-self-center justify-self-center" alt="drone image">
+					</div>
+						<div class="card-body px-0">
+						<h5 class="card-title mb-0">DJ Mavic Portable Drone, Arctic White</h5>
+						<p class="card-text lead pr-2">Now $1099 <span class="was-price text-danger">$1299</span></p>
+						<div class="rating-wrapper">
+							<small>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<span class="text-muted pl-2">Avg 5/5 <span class="d-none d-md-inline-block">(12 ratings)</span></span>
+							</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col thumbnail mt-3">
+				<div class="card w-100 border-0">
+					<div class="thumb-img-wrapper d-flex align-items-center justify-content-center">
+						<img src="img/headphones.jpg" class="card-img-top align-self-center justify-self-center" alt="drone image">
+					</div>
+						<div class="card-body px-0">
+						<h5 class="card-title mb-0">Bose QuietComfort 35 (Series II) Wireless Bluetooth Headphones</h5>
+						<p class="card-text lead pr-2">$369</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<section id="newsletter" class="py-4">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-lg-7">
+						<h3 class="text-white big-lead pb-2 pb-lg-0">Special offers in your inbox!</h3>
+					</div>
+					<div class="col text-right">
+							<div class="input-group">
+								<input type="email" class="form-control pl-4" placeholder="myemail@gmail.com" aria-label="Email Field">
+								<div class="input-group-append">
+									<button class="btn btn-dark" type="button"><i class="fas fa-envelope text-white px-3"></i></button>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<script src="https://kit.fontawesome.com/5b16fd7891.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
