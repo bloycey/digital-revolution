@@ -93,11 +93,9 @@
 	content: "\f077"
 }
 
-
-
 @media only screen and (min-width: 992px) {
 	#mobileMenu #quickLinksWrapper {
-		display: flex !important;
+		display: flex;
 	}
 }
 
@@ -148,7 +146,6 @@
 		min-width: 25%;
 	}
 }
-
 
 .thumb-img-wrapper {
 	height: 255px;
