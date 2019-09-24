@@ -82,11 +82,23 @@
 	font-family: FontAwesome;
 	float: right;
 	font-weight: 900;
-	content: "\f077";
+	content: "\f078"
 }
 
-#mobileMenu h5.collapsed:after {
+#mobileMenu h5[aria-expanded="false"]:after {
 	content: "\f078"
+}
+
+#mobileMenu h5[aria-expanded="true"]:after {
+	content: "\f077"
+}
+
+
+
+@media only screen and (min-width: 992px) {
+	#mobileMenu #quickLinksWrapper {
+		display: flex !important;
+	}
 }
 
 /****SEARCH DROPDOWN ***/
