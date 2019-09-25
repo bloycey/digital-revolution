@@ -1,12 +1,15 @@
 /****** GLOBAL STYLES *****/
 
-.small {
-	font-size: 90%;
+* {
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.big-lead {
-	font-size: 1.75rem;
-	font-weight: 300;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+.small {
+	font-size: 90%;
 }
 
 .text-light {
@@ -181,12 +184,6 @@
 	background-image: url("/img/testimonial-bg.jpg");
 	background-size: cover;
 	background-position: center center;
-}
-
-.testimonial-slide span {
-	font-size: 150%;
-	transform: translate(-160%, -40%);
-	position: absolute;
 }
 
 .testimonials-wrapper .slick-dots li button:before {
