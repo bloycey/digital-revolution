@@ -197,3 +197,12 @@
 .testimonials-wrapper .slick-dots {
 	position: static;
 }
+
+/**********HOME BLOGS************/
+
+.chevron-list > li:before {
+	font-family: FontAwesome;
+	font-weight: 900;
+	content: "\f054";
+	margin-right: 15px;
+}
