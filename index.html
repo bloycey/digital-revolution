@@ -32,160 +32,241 @@
 				</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark shadow-sm">
-			<div class="container">
-				<button class="navbar-toggler border-0 p-0 text-white" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fas fa-bars text-white"></i>
-				</button>
-				<a class="navbar-brand mr-auto mr-lg-5 ml-3 ml-lg-0" href="#"><img src="img/logo.png" alt="Digital Revolution Logo"></a>
-				<div class="collapse navbar-collapse" id="mobileMenu">
-					<div class="py-2">
-						<h5 class="text-white py-1 d-lg-none" data-toggle="collapse" data-target="#quickLinksWrapper">Quick Links</h5>
-						<div class="row collapse" id="quickLinksWrapper">
-							<div class="col">
-								<ul class="navbar-nav mr-auto pt-lg-0">
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Smart Home</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Routers</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Drones</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Security</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Tablets</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 ml-lg-2 mr-lg-2" href="#">Gaming</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col d-lg-none">
-								<ul class="navbar-nav mr-auto d-lg-none">
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Our Blog</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">About Us</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Buying Guides</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Contact Us</a>
-									</li>
-								</ul>
-							</div>
+		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark shadow-sm py-2 py-lg-0 d-lg-none" id="mobileMenuWrapper">
+			<button class="navbar-toggler border-0 p-0 text-white h-100" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars text-white"></i>
+			</button>
+			<a class="navbar-brand mr-auto mr-lg-5 ml-3 ml-lg-0 py-0 h-100 d-flex align-items-center" href="#">
+				<img src="img/logo.png" alt="Digital Revolution Logo">
+			</a>
+			<div class="menu-icon-wrapper ml-auto h-100 d-lg-none">
+				<ul class="list-inline mb-0 h-100 d-flex align-items-center">
+					<li class="list-inline-item" data-toggle="collapse" data-target="#searchDropdown"><i class="fas fa-search text-white ml-2"></i></li>
+					<li class="list-inline-item">
+						<i class="fas fa-shopping-cart text-white ml-2 mr-2"></i>
+						<span class="d-none d-lg-inline-block text-light">Shopping Cart</span>
+						<i class="fas fa-angle-down text-white ml-2"></i>
+					</li>
+				</ul>
+			</div>
+		</nav>	
+		<div class ="collapse bg-dark d-lg-none" id="mobileMenu">
+			<div class="border-top border-bottom">
+				<div class="container pb-4">
+					<div class="row pt-3 pb-2">
+						<div class="col">
+							<h5 class="text-white py-1 font-weight-bold">Quick Links</h5>
 						</div>
-						<h5 class="text-white py-1 d-lg-none" data-toggle="collapse" data-target="#mobileMenuCategories">All Categories</h5>
-						<ul class="navbar-nav mr-auto d-lg-none flex-row flex-wrap mobile-menu collapse" id="mobileMenuCategories">
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Drones</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Cameras & Photos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Home Cinema & Audio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Speakers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Headphones</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Televisions</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Mobile Phones</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Phone Accessories</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Smart Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Wearable Technology</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Musical Instruments</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">GPS Navigation</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Laptops</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Desktops</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Computer Accessories</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Networking</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Office Furniture</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Radio Communication</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Batteries</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Vehicle Electronics</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">VOIP Accessories</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Cord Management</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Surge Protectors</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Extension Cords</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Cables</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Switches & Dimmers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Home Automation</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Electric Motors</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Door Chimes</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Tools</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Hobby Kits</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-light pb-1 pt-0 pl-lg-3 pb-lg-0 pr-lg-3" href="#">Conduits</a>
-							</li>
-						</ul>
+					</div>
+					<div class="row" id="mobileQuickLinks">
+						<div class="col">
+							<ul class="navbar-nav mr-auto pt-0">
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Smart Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Routers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Drones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Security</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="menu-icon-wrapper ml-auto">
-					<ul class="list-inline mb-0">
-						<li class="list-inline-item d-lg-none" data-toggle="collapse" data-target="#searchDropdown"><i class="fas fa-search text-white ml-2"></i></li>
-						<li class="list-inline-item"><i class="fas fa-shopping-cart text-white ml-2 mr-2"></i> <span class="d-none d-lg-inline-block text-light">Shopping Cart</span><i class="fas fa-angle-down text-white ml-2"></i></li>
+			</div>	
+			<div class="border-bottom">
+				<div class="container pb-4">
+					<div class="row pt-3 pb-2">
+						<div class="col">
+							<h5 class="text-white py-1 font-weight-bold">All Categories</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<ul class="navbar-nav mr-auto flex-row flex-wrap mobile-menu" id="mobileMenuCategories">
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Drones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Cameras & Photos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Home Cinema & Audio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Speakers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Headphones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Televisions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Mobile Phones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Phone Accessories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Smart Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Wearable Technology</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Musical Instruments</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">GPS Navigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Laptops</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Desktops</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Computer Accessories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Networking</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Office Furniture</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Radio Communication</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Batteries</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Vehicle Electronics</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">VOIP Accessories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Cord Management</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Surge Protectors</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Extension Cords</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Cables</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Switches & Dimmers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Home Automation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Electric Motors</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Door Chimes</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Tools</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Hobby Kits</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link py-half text-light d-flex align-items-center" href="#">Conduits</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container pb-4">
+				<div class="row pt-3 pb-2">
+					<div class="col">
+						<h5 class="text-white py-1 font-weight-bold">Useful Links</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link py-half text-light d-flex align-items-center" href="#">Our Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link py-half text-light d-flex align-items-center" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link py-half text-light d-flex align-items-center" href="#">Buying Guides</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link py-half text-light d-flex align-items-center" href="#">Contact Us</a>
+							</li>
+						</ul>		
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark shadow-sm py-0 d-none d-lg-flex" id="mainNavWrapper">
+			<div class="container d-flex h-100">
+			<button class="navbar-toggler border-0 p-0 text-white h-100" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars text-white"></i>
+				</button>
+				<a class="navbar-brand mr-5 ml-0 py-0 h-100 d-flex align-items-center" href="#">
+					<img src="img/logo.png" alt="Digital Revolution Logo">
+				</a>
+				<div class="h-100 d-none d-lg-block" id="mainMenu">
+					<h5 class="text-white py-1 mt-3 d-lg-none" data-toggle="collapse" data-target="#quickLinksWrapper">Quick Links</h5>
+					<div class="h-100 row d-flex" id="quickLinksWrapper">
+						<div class="col">
+							<ul class="navbar-nav mr-auto pt-lg-0 h-100">
+								<li class="nav-item h-100">
+									<a class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100" href="#">Smart Home</a>
+								</li>
+								<li class="nav-item h-100">
+									<a class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100" href="#">Routers</a>
+								</li>
+								<li class="nav-item h-100">
+									<a class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100" href="#">Drones</a>
+								</li>
+								<li class="nav-item h-100">
+									<a class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100" href="#">Security</a>
+								</li>
+								<li class="nav-item h-100 dropdown">
+									<a href="#" class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Dropdown button
+									</a>
+									<div class="dropdown-menu mt-0 py-0 border-0 rounded-0 bg-dark" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item text-light" href="#">Action</a>
+										<a class="dropdown-item text-light" href="#">Another action</a>
+										<a class="dropdown-item text-light" href="#">Something else here</a>
+									</div>
+								</li>
+								<li class="nav-item h-100">
+									<a class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100" href="#">Tablets</a>
+								</li>
+								<li class="nav-item h-100">
+									<a class="nav-link py-2 text-light ml-2 mr-2 d-flex align-items-center h-100" href="#">Gaming</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="menu-icon-wrapper ml-auto h-100 d-none d-lg-inline-block">
+					<ul class="list-inline mb-0 h-100 d-flex align-items-center">
+						<li class="list-inline-item">
+							<i class="fas fa-shopping-cart text-white ml-2 mr-2"></i>
+							<span class="d-none d-lg-inline-block text-light">Shopping Cart</span>
+							<i class="fas fa-angle-down text-white ml-2"></i>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -206,7 +287,7 @@
 	<section id="homeTop" class="container py-4 py-lg-5">
 		<div class="row">
 			<div class="col">
-				<h4 class="border-bottom pb-3 text-secondary">Top Products</h3>
+				<h4 class="border-bottom pb-3 text-secondary">Top Products</h4>
 				<div class="row">
 					<!--thumbnail-->
 					<div class="col thumbnail mt-3 position-relative">
@@ -252,7 +333,7 @@
 			<div class="col-6 d-none d-lg-inline-block">
 				<div class="card">
 					<div class="card-header bg-dark text-white">
-						<h5 class="mb-0">Product Categories</h4>
+						<h5 class="mb-0">Product Categories</h5>
 					</div>
 					<div class="card-body">
 						<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-flex flex-row flex-wrap desktop-categories">
@@ -457,7 +538,7 @@
 	<section id="homeBottom" class="container py-4 py-lg-5">
 		<div class="row">
 			<div class="col">
-				<h4 class="border-bottom pb-3 text-secondary">Sale Products</h3>
+				<h4 class="border-bottom pb-3 text-secondary">Sale Products</h4>
 				<div class="row">
 					<div class="col thumbnail mt-3 position-relative">
 						<div class="card w-100 border-0">
@@ -501,7 +582,7 @@
 			<div class="col-6 d-none d-lg-inline-block">
 				<div class="card">
 					<div class="card-header bg-dark text-white">
-						<h5 class="mb-0">Our Brands</h4>
+						<h5 class="mb-0">Our Brands</h5>
 					</div>
 					<div class="card-body">
 						<ul class="navbar-nav mr-auto pt-2 pt-lg-0 d-flex flex-row flex-wrap desktop-categories">
@@ -663,7 +744,7 @@
 			<div class="container pb-5">
 				<div class="row">
 					<div class="col-12 pb-4 pb-lg-0 col-lg-5 order-lg-2 text-white recent-blog-posts">
-						<h4 class="pb-2">Recent Blog Posts</h3>
+						<h4 class="pb-2">Recent Blog Posts</h4>
 						<ul class="list-unstyled chevron-list">
 							<li class="pb-1"><a href="#" class="text-white font-italic font-weight-light">We visited this location. Here's what we learned.</a></li>
 							<li class="pb-1"><a href="#" class="text-white font-italic font-weight-light">Make the right choice.</a></li>

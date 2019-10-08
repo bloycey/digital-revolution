@@ -4,8 +4,9 @@
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	font-weight: 400;
+.py-half {
+	padding-bottom: .125rem;
+	padding-top: .125rem;
 }
 
 .small {
@@ -20,9 +21,6 @@
 	color: #5c636a!important;
 }
 
-.border-very-light {
-	border-color: #f8f9fa!important;
-}
 
 @media only screen and (min-width: 992px) {
 	.py-lg-6 {
@@ -43,63 +41,49 @@
 
 /***** HEADER *******/
 
+
 .navbar-main i {
 	font-size: 20px;
 }
 
+#quickLinksWrapper .dropdown > .dropdown-menu {
+	display: block;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+#mainNavWrapper {
+	height: 60px;
+}
+
 .menu-icon-wrapper {
-	position: absolute;
-	top: 22px;
-	right: 15px;
+	position: relative;
+	top: unset;
+	right: unset;
 }
 
-@media only screen and (min-width: 992px) {
-	.menu-icon-wrapper {
-		position: relative;
-		top: unset;
-		right: unset;
-	}
-
-	#mobileMenu .nav-item a {
-		padding-bottom: 6px;
-		margin-bottom: -6px;
-		border-bottom: 1px solid transparent;
-	}
-
-	#mobileMenu .nav-item a:hover {
-		border-bottom: 1px solid #00CBB8;
-	}
+#mainMenu .nav-item > a:hover {
+	color: #ffffff !important;
 }
 
-@media only screen and (max-width: 992px) {
-	.navbar-main > .container {
-		max-width: 100%;
-	}
+#mainMenu .dropdown-menu > a:hover {
+	color: #212529 !important;
+}
+
+#quickLinksWrapper .dropdown > .dropdown-menu {
+	display: none;
+}
+
+#quickLinksWrapper .dropdown:hover > .dropdown-menu {
+	display: block;
+	background-color: #343a40!important;
+}
+
+#quickLinksWrapper .dropdown-menu a:last-child {
+	padding-bottom: .5rem;
 }
 
 .mobile-menu .nav-item, .desktop-categories .nav-item {
 	width: 50%;
-}
-
-#mobileMenu h5:after {
-	font-family: FontAwesome;
-	float: right;
-	font-weight: 900;
-	content: "\f078"
-}
-
-#mobileMenu h5[aria-expanded="false"]:after {
-	content: "\f078"
-}
-
-#mobileMenu h5[aria-expanded="true"]:after {
-	content: "\f077"
-}
-
-@media only screen and (min-width: 992px) {
-	#mobileMenu #quickLinksWrapper {
-		display: flex;
-	}
 }
 
 /****SEARCH DROPDOWN ***/
