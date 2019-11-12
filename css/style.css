@@ -165,7 +165,7 @@
 /*******HOME TESTIMONIALS******/
 
 #homeTestimonials {
-	background-image: url("/img/testimonial-bg.jpg");
+	background-image: url("img/testimonial-bg.jpg");
 	background-size: cover;
 	background-position: center center;
 }
